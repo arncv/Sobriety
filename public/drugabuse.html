@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SOBRIETY -  Breaking the chains of addiction, together.
+    </title>
+    <meta name="Description" content="" />
+    <!--   -->
+    
+    <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/minify.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css" id="stylesheet">
+    <style>
+      @keyframes hidePreloader {
+        0% {
+          width: 100%;
+          height: 100%;
+        }
+        100% {
+          width: 0;
+          height: 0;
+        }
+      }
+      body>div.preloader {
+        position: fixed;
+        background: white;
+        width: 100%;
+        height: 100%;
+        z-index: 1071;
+        opacity: 0;
+        transition: opacity .5s ease;
+        overflow: hidden;
+        pointer-events: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      body:not(.loaded)>div.preloader {
+        opacity: 1;
+      }
+      body:not(.loaded) {
+        overflow: hidden;
+      }
+      body.loaded>div.preloader {
+        animation: hidePreloader .5s linear .5s forwards;
+      }
+    </style>
+    <script>
+      window.addEventListener("load", function() {
+        setTimeout(function() {
+          document.querySelector('body').classList.add('loaded');
+        }
+                   , 300);
+      }
+                             );
+    </script>
+  </head>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="/index.js"></script>
+
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...
+        </span>
+      </div>
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal-cookies" data-backdrop="false" aria-labelledby="modal-cookies" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-aside left-4 right-4 bottom-4">
+      </div>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="/">
+          <img alt="Image placeholder" src="assets/logo.png" id="navbar-logo width=" 50000"="" height="60000" "="" style="
+    width: 80px;
+    height: 80px;
+"><strong>SOBRIETY</strong>
+        </a>
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+          </span>
+        </button>
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mt-4 mt-lg-0 ml-auto">
+            <li class="nav-item ">
+              
+            </li>
+            <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+              <a class="nav-link" href="#" role="button" data-toggle="dropdown"
+                 aria-haspopup="true" aria-expanded="false">Quick Links
+              </a>
+              <div class="dropdown-menu dropdown-menu-single">
+                <a href="alcoholabuse.html" class="dropdown-item">Alcohol Abuse
+                </a>
+                <a href="drugabuse.html" class="dropdown-item">Narcotics Abuse
+                </a>
+                <div class="dropdown-divider">
+                </div>
+                <a href="peergroup.html" class="dropdown-item"> Peer Support Group
+                </a>
+              </div>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="mailto:arnvgl@pm.me">Contact
+              </a>
+            </li>
+          </ul>
+          <!-- Button -->
+          <a class="navbar-btn btn btn-sm btn-primary d-none d-lg-inline-block ml-3" href="drugabuse.html">
+            Login or Register
+          </a>
+          <!-- Mobile button -->
+          <div class="d-lg-none text-center">
+            <a href="register.html" class="btn btn-block btn-sm btn-warning">Login or Register
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Main content -->
+     <div class="chat">
+      <div class="side-panel">
+        <h1 id="title">Narcotics Support Group</h1>
+        <ul>
+          <li><a class="panel-link" href="https://docs.hedera.com/"><img />Local Support Groups</a></li>
+          <li><a class="panel-link"href="https://github.com/hashgraph/"><img />NGOs</a></li>
+          <li><a class="panel-link" href="https://docs.hedera.com/"><img />Talk to Professionals</a></li>
+        </ul>
+      </div>
+      <div class="main-panel">
+        <div class="content">
+          <div class="header">
+            <div class="chat-details">
+              <h3 id="topic-id"> </h3>
+              <h4 id="sequence-number"> </h4>
+            </div>
+          </div>
+          <ul id="messages">
+          </ul>
+          <form id="form" action="">
+            <input id="m" autocomplete="off" placeholder="Type a message here"/><button alt="send"> </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+          <!-- SVG shape -->
+          
+          <!-- Footer -->
+        <div class="container pt-4">
+          <div class="row">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+              <!-- Theme's logo -->
+              
+              <!-- Somos -->
+              <p class="mt-4 text-sm opacity-8 pr-lg-4">Breaking the chains of addiction, together.
+              </p>                     
+            </div>
+            <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
+              <h6 class="heading mb-3">About Us
+              </h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#">Our Team
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Our Mission
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:arnvgl@pm.me">Careers
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
+              <h6 class="heading mb-3">Support
+              </h6>
+              <ul class="list-unstyled text-small">
+                <li>
+                  <a href="#">Help Center
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Terms of Service
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy
+                  </a>
+                </li>
+              </ul>
+          </div>
+          <hr class="divider divider-fade divider-dark my-footer">
+          <div class="row align-items-center justify-content-md-between pb-4">
+            <div class="col-md-6">
+              <div class="copyright text-sm font-weight-bold text-center text-md-left">
+                Made with 🧡  by
+                <a href="https://www.arnavgoel.xyz" class="font-weight-bold" target="_blank">Arnav
+                </a>.
+
+                <a href="https://github.com/arncv/">
+                  <img alt="Image placeholder" src="assets/logo.png" id="footer-logo" style="
+    width: 100px;
+">
+                </a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </footer>
+      <!-- Core JS  -->
+      <script src="assets/libs/jquery/dist/jquery.min.js">
+      </script>
+      <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js">
+      </script>
+      <script src="assets/libs/svg-injector/dist/svg-injector.min.js">
+      </script>
+      <script src="assets/libs/feather-icons/dist/feather.min.js">
+      </script>
+      <!-- Quick JS -->
+      <script src="index.js">
+      </script>
+      <!-- Feather Icons -->
+      <script>
+        feather.replace({
+          'width': '1em',
+          'height': '1em'
+        }
+                       )
+      </script>
+ 
+      </body>
+    </html>
